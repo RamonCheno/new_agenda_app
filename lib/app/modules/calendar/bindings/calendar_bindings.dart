@@ -2,13 +2,13 @@ import 'package:get/get.dart';
 import 'package:new_agenda_app/app/data/providers/tasks/index_task.dart';
 import 'package:new_agenda_app/app/data/repositories/tasks/index_repository.dart';
 
-import '../controllers/task_controller.dart';
+import '../controllers/calendar_controller.dart';
 
-class TasksBinding extends Bindings {
+class CalendarBinding extends Bindings {
   @override
   void dependencies() {
-    Get.lazyPut<TasksController>(
-      () => TasksController(
+    Get.lazyPut<CalendarController>(
+      () => CalendarController(
         TaskRepository(
           TaskProvider(),
         ),

@@ -1,5 +1,5 @@
 import 'home_routes.dart';
-// import 'task_routes.dart';
+import 'task_routes.dart';
 
 class AppPages {
   AppPages._();
@@ -7,7 +7,7 @@ class AppPages {
   
   static final routes = [
     ...HomeRoutes.routes,
-    // ...TaskRoutes.routes
+    ...TasksRoutes.routes
   ];
 
 }
