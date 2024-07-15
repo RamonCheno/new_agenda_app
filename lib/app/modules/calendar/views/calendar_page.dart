@@ -41,7 +41,6 @@ class CalendarPage extends GetView<CalendarController> {
                           textAlign: TextAlign.center,
                           style: TextStyle(
                             fontSize: 20,
-                            color: Colors.black45,
                           ),
                         ),
                       ),

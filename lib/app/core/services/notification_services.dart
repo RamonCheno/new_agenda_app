@@ -53,7 +53,7 @@ class NotificationService {
         category: NotificationCategory.Alarm,
         notificationLayout: NotificationLayout.Default,
         backgroundColor: Colors.red[100],
-        largeIcon: 'asset://assets/icons_launcher/icon_launcher.png',
+        // largeIcon: 'asset://assets/icons_launcher/icon_launcher.png',
         roundedLargeIcon: true,
       ),
       actionButtons: [

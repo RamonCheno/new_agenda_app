@@ -2,11 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:new_agenda_app/app/core/config/init_database.dart';
+import 'package:new_agenda_app/app/core/services/notification_services.dart';
 import 'package:new_agenda_app/app/routes/app_pages.dart';
+
+import 'app/core/theme/app_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await InitDatabase.initDatabase();
+  await NotificationService.initLocalNotification();
   runApp(const MyApp());
 }
 
@@ -27,9 +31,9 @@ class MyApp extends StatelessWidget {
         Locale('en', 'US'),
         Locale('es', 'US'),
       ],
-      theme: ThemeData(
-        useMaterial3: true,
-      ),
+      darkTheme: AppTheme().darkTheme(),
+      theme: AppTheme().lightTheme(),
+      themeMode: ThemeMode.system,
       initialRoute: AppPages.initial,
       getPages: AppPages.routes,
     );

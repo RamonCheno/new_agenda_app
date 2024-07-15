@@ -29,8 +29,7 @@ class TaskPage extends GetView<TasksController> {
                         child: Text(
                           'No hay tareas',
                           style: TextStyle(
-                            fontSize: 20,
-                            color: Colors.black45,
+                            fontSize: 20
                           ),
                         ),
                       ),

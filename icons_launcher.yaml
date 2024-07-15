@@ -1,0 +1,10 @@
+icons_launcher:
+  image_path: "assets/icons_launcher/icon_launcher.png"
+  platforms:
+    android:
+      enable: true
+      adaptive_background_color: '#ffffff'
+      adaptive_foreground_image: "assets/icons_launcher/icon_launcher_foreground.png"
+      adaptive_round_image: "assets/icons_launcher/icon_launcher_round.png"
+    ios:
+      enable: false

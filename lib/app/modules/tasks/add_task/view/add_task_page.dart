@@ -27,7 +27,7 @@ class AddTaskPage extends GetView<AddTaskController> {
                   ),
                   Container(
                     margin: const EdgeInsets.all(10),
-                    color: Colors.blue[50],
+                    color: Colors.blue[50], //TODO: Cambiar a theme
                     // padding: const EdgeInsets.all(10),
                     child: Form(
                       child: CustomTextfieldformWidget(
