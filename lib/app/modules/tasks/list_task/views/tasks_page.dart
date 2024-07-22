@@ -13,7 +13,6 @@ class TaskPage extends GetView<TasksController> {
     return Scaffold(
       appBar: AppBar(
         title: Text(controller.title),
-        centerTitle: true,
       ),
       body: Center(
         child: Obx(

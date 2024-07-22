@@ -28,7 +28,7 @@ class UpdateTaskPage extends GetView<UpdateTaskController> {
                   ),
                   Container(
                     margin: const EdgeInsets.all(10),
-                    color: Colors.blue[50],
+                    // color: Colors.blue[50],
                     // padding: const EdgeInsets.all(10),
                     child: Form(
                       child: CustomTextfieldformWidget(
@@ -49,7 +49,7 @@ class UpdateTaskPage extends GetView<UpdateTaskController> {
                   TextButton(
                     style: ButtonStyle(
                       overlayColor:
-                          MaterialStateProperty.all(Colors.transparent),
+                          WidgetStateProperty.all(Colors.transparent),
                     ),
                     onPressed: () {
                       controller.selectDate(context);
@@ -73,7 +73,7 @@ class UpdateTaskPage extends GetView<UpdateTaskController> {
                   TextButton(
                     style: ButtonStyle(
                       overlayColor:
-                          MaterialStateProperty.all(Colors.transparent),
+                          WidgetStateProperty.all(Colors.transparent),
                     ),
                     onPressed: () {
                       controller.selectTime(context);

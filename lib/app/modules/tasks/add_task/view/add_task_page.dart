@@ -27,7 +27,9 @@ class AddTaskPage extends GetView<AddTaskController> {
                   ),
                   Container(
                     margin: const EdgeInsets.all(10),
-                    color: Colors.blue[50], //TODO: Cambiar a theme
+                    // color: Theme.of(context)
+                    //     .colorScheme
+                    //     .onSecondaryContainer, //TODO: Cambiar a theme
                     // padding: const EdgeInsets.all(10),
                     child: Form(
                       child: CustomTextfieldformWidget(
@@ -47,8 +49,7 @@ class AddTaskPage extends GetView<AddTaskController> {
                   const SizedBox(width: 5),
                   TextButton(
                     style: ButtonStyle(
-                      overlayColor:
-                          WidgetStateProperty.all(Colors.transparent),
+                      overlayColor: WidgetStateProperty.all(Colors.transparent),
                     ),
                     onPressed: () {
                       controller.selectDate(context);
@@ -71,8 +72,7 @@ class AddTaskPage extends GetView<AddTaskController> {
                   const SizedBox(width: 5),
                   TextButton(
                     style: ButtonStyle(
-                      overlayColor:
-                          WidgetStateProperty.all(Colors.transparent),
+                      overlayColor: WidgetStateProperty.all(Colors.transparent),
                     ),
                     onPressed: () {
                       controller.selectTime(context);

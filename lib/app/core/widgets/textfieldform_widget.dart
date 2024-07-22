@@ -21,9 +21,6 @@ class CustomTextfieldformWidget extends StatelessWidget {
           maxLines: 6,
           decoration: InputDecoration(
             hintText: hintName,
-            hintStyle: TextStyle(
-              color: Colors.grey.shade500,
-            ),
           ),
           validator: (value) {
             if (value == null || value.isEmpty) {

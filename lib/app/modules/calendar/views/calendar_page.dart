@@ -13,7 +13,6 @@ class CalendarPage extends GetView<CalendarController> {
     return Scaffold(
       appBar: AppBar(
         title: Text(controller.title),
-        centerTitle: true,
       ),
       body: Column(
         children: [
